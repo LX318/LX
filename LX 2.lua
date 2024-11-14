@@ -171,7 +171,7 @@ ESPSettings:AddDivider()
 ESPSettings:AddSlider("ESPS_FadeTime", { Text = "淡入/淡出时间", Default = 1, Min = 0, Max = 2, Rounding = 2, Compact = true, Suffix = "s" })
 
 local VisualsView = Tabs.Visuals:AddLeftGroupbox("View")
-VisualsView:AddSlider("VV_FieldOfView", { Text = "扬视角", Default = 0, Min = 0, Max = 120, Rounding = 0, Compact = true, Tooltip = "更改摄像机视野." })
+VisualsView:AddSlider("VV_FieldOfView", { Text = "视角", Default = 0, Min = 0, Max = 120, Rounding = 0, Compact = true, Tooltip = "更改摄像机视野." })
 VisualsView:AddToggle("VV_NoCamShake", { Text = "无相机抖动", Default = false, Tooltip = "移除实体或其他事物将发生的任何摄像机抖动." })
 VisualsView:AddToggle("VV_NoLookBob", { Text = "无相机晃动", Default = false, Tooltip = "消除行走时出现的任何外观晃动." })
 VisualsView:AddDivider()
@@ -187,7 +187,7 @@ VisualsView:AddSlider("VV_ViewmodelOffset_Y", { Text = "Y", Default = 0, Min = -
 VisualsView:AddSlider("VV_ViewmodelOffset_Z", { Text = "Z", Default = 0, Min = -5, Max = 5, Rounding = 1, Compact = true, })
 
 local VisualsWorld = Tabs.Visuals:AddRightGroupbox("世界")
-VisualsWorld:AddToggle("VW_Ambience", { Text = "氛围", Default = false, Tooltip = "更改地图的颜色." }):AddColorPicker("VW_Ambience_C", { Default = Color3.new(1, 1, 1), Title = "Ambience Color" })
+VisualsWorld:AddToggle("VW_Ambience", { Text = "高亮", Default = false, Tooltip = "更改地图的颜色." }):AddColorPicker("VW_Ambience_C", { Default = Color3.new(1, 1, 1), Title = "Ambience Color" })
 VisualsWorld:AddToggle("VW_NoFog", { Text = "移除雾", Default = false, Tooltip = "移除贴图雾（如果可用）." })
 VisualsWorld:AddDivider()
 VisualsWorld:AddToggle("VW_RushNodes", {Text = "显示Rush/Ambush路径点", Tooltip = "显示 Rush 和 Ambush 在移动时将采用的路径."})
